@@ -8,6 +8,8 @@
 %u - unsigned int в 10
 */
 
+// new line
+
 int main(void)
 {
     char byte;
