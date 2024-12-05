@@ -1,12 +1,36 @@
-#include <stdio.h>
+const int max_size = 5;
 
-int main(void)
-{    
-    int a = 5;
-    int b = 12;
-    int c = (a *= 3) * (b -= 10) + 2.3;
-    printf("%d", c);
-    // здесь продолжайте программу
+#define SIZE    1
+#define IS_CPP
 
-    return 0;
-}
+#if SIZE >= 0 && SIZE <= 10 ... 
+#endif
+
+#ifdef IS_CPP ...
+ #endif
+
+#ifndef IS_CPP ... 
+#endif
+
+#if(SIZE == 1) ... 
+#endif
+
+#if SIZE > 0 ... 
+#endif
+
+#if max_size > 1 ... 
+#endif
+
+#if SIZE > 10 - 8 ... 
+#endif
+
+#if !defined(SIZE) ... 
+#endif
+
+
+
+#ifdef(IS_CPP) ... 
+#endif
+
+#if defined(SIZE) 1 
+#endif

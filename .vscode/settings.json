@@ -59,5 +59,10 @@
         "spwn": "spwn build",
         "pkl": "cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
         "gleam": "gleam run -m $fileNameWithoutExt"
+    },
+    "files.associations": {
+        "stdio.h": "c",
+        "iostream": "c",
+        "dop.h": "c"
     }
 }
