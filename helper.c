@@ -1,36 +1,18 @@
-const int max_size = 5;
+#include <stdio.h>
 
-#define SIZE    1
-#define IS_CPP
+int main(void)
+{
+    short a, b;
+    short *ptr_a = &a, *ptr_b = &b;
+    void *asd;
+    scanf("%hd, %hd", &a, &b);
+    asd = ptr_a;
+    ptr_a = ptr_b;
+    ptr_b = asd;
+        
+    printf("%hd %hd", *ptr_a, *ptr_b);
+    // здесь продолжайте программу
 
-#if SIZE >= 0 && SIZE <= 10 ... 
-#endif
-
-#ifdef IS_CPP ...
- #endif
-
-#ifndef IS_CPP ... 
-#endif
-
-#if(SIZE == 1) ... 
-#endif
-
-#if SIZE > 0 ... 
-#endif
-
-#if max_size > 1 ... 
-#endif
-
-#if SIZE > 10 - 8 ... 
-#endif
-
-#if !defined(SIZE) ... 
-#endif
-
-
-
-#ifdef(IS_CPP) ... 
-#endif
-
-#if defined(SIZE) 1 
-#endif
+    // макроопределение для тестирования (не убирать и должно идти непосредственно перед return 0)
+    return 0;
+}
